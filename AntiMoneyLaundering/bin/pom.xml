@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- This is the ROOT project descriptor -->
+    <groupId>com.aml.amlbatchprocess.ck</groupId>
+    <artifactId>antimoneylaundering</artifactId>
+    <version>01.01.2026</version>
+
+    <!-- packaging belongs to THIS project, not parent -->
+    <packaging>pom</packaging>
+    <name>${project.artifactId} ${project.version} (POM)</name>
+
+    <modules>
+        <module>app</module>
+        <module>deploy</module>
+        <module>config</module>
+    </modules>
+
+</project>
