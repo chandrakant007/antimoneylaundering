@@ -18,23 +18,15 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<java.version>1.8</java.version>
 	</properties>
 
 	<build>
 		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.class</include>
-					<include>**/*.xml</include>
-					<include>**/*.res.ser</include>
-					<include>**/*.html</include>
-					<include>**/*.properties</include>
-				</includes>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
+			
 		</resources>
 		<pluginManagement>
 			<plugins>
@@ -77,6 +69,19 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.7.18</version>
+		</dependency>
 
 
 	</dependencies>
